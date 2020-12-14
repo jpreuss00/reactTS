@@ -1,16 +1,20 @@
-import React from 'react';
+import React from 'react'
 import Post from './Post'
 
-const postList = (user: User) => {
+type Props = {
+    user: Array<User>
+}
+
+const PostList = ({user}: Props) => {
     return(
         <div>
-            {user.posts.map(posts =>{
+            {user[0].posts.map(posts =>{
                 return (
                     <Post title={posts.title} text={posts.text} likes={posts.likes}/>
                 )
             })}
         </div>
     )
-}
+}   
 
-export default postList;
+export default PostList;
