@@ -18,3 +18,12 @@ type Post = {
   text: string
   likes: number
 }
+
+type Props = {
+  user: User
+}
+
+type PersonalInfos = {
+  name: string
+  age: number
+}

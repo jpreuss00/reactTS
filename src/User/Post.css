@@ -1,0 +1,33 @@
+.post {
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+  margin: 3px;
+}
+
+.postList {
+ 
+}
+
+.userProfile {
+  background: rgb(95, 167, 190);
+  padding: 10px;
+  display: inline-block;
+
+}
+
+.user {
+  
+  text-align: center;
+}
+
+.likes {
+  background-color: rgb(95, 167, 190);
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.likes:focus {
+  outline: none;
+  box-shadow: none;
+}
