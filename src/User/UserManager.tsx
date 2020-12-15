@@ -36,7 +36,9 @@ const initialUsers: Array<User> = [
 
 function User() {
   const [user, setUser] = useState(singleUser);
+
   initialUsers.forEach(currentUser => {
+
     setUser(currentUser);
     return (
       <div className="userProfile">
@@ -45,7 +47,8 @@ function User() {
       </div>
     );
   });
-  return console.log(user);
+
+  return <></>;
 }
 
 export default User;
