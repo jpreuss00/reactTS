@@ -7,7 +7,6 @@ import User from './User/UserManager'
 
 ReactDOM.render(
   <React.StrictMode>
-    
     <User/>
   </React.StrictMode>,
   document.getElementById('root')

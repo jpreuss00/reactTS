@@ -27,3 +27,9 @@ type PersonalInfos = {
   name: string
   age: number
 }
+
+type AddUser = (newUser: User) => void;
+
+type Prop = {
+  addUser: AddUser
+}

@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import PostList from "./PostList";
 import UserProfile from "./UserProfile";
 import "./Post.css";
-const singleUser = {
+import AddUser from "./AddUser";
+
+const singleUser: User = {
   name: "Nina",
   age: 26,
   posts: [
@@ -34,6 +36,29 @@ const initialUsers: Array<User> = [
   singleUser
 ];
 
+/*
+function User() {
+  const [user, setUser] = useState(initialUsers);
+
+  const addUser = (newUser: User) => {
+    setUser([...user, newUser])
+    console.log(user)
+  }
+
+  return (
+    <>
+    <div className="userProfile">
+      <UserProfile user={user[0]} />
+      <PostList user={user[0]} />
+    </div>
+      <AddUser addUser={addUser}/>
+    </>
+  );
+}
+*/
+
+export default User;
+
 function User() {
   const [user, setUser] = useState(singleUser);
 
@@ -50,5 +75,3 @@ function User() {
 
   return <></>;
 }
-
-export default User;
